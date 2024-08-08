@@ -1,7 +1,11 @@
 streamlit
 streamlit_chat
+langchain
 langchain_community
 sentence_transformers
 pinecone-client
 openai
+utils
 emoji
+pinecone
+os
