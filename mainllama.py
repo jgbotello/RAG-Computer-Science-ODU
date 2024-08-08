@@ -28,7 +28,7 @@ try:
     llm = ChatOllama(
         model_name="mistral:7b-instruct-v0.2-fp16",
         api_key=st.secrets["OLLAMA_API_KEY"],
-        server_url="http://localhost:11434"
+        server_url="http://127.0.0.1:4040"
     )
 
     # Initialize conversation memory
