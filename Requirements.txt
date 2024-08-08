@@ -1,0 +1,7 @@
+streamlit
+streamlit_chat
+langchain_community
+sentence_transformers
+pinecone-client
+openai
+emoji
