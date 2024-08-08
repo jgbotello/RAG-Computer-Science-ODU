@@ -24,7 +24,7 @@ if 'requests' not in st.session_state:
 
 
 # initialize conversational model
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=st.secrets["OpenAi_Key"])
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=st.secrets[openai]["OpenAi_Key"])
 
 # Conversation memory configuration
 if 'buffer_memory' not in st.session_state:
