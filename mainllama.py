@@ -23,7 +23,7 @@ if 'requests' not in st.session_state:
     st.session_state['requests'] = []
 
 # initialize conversational model
-llm = ChatOllama(model_name="mistral:7b-instruct-v0.2-fp16", api_key="C:/Users/<username>/.ollama/id_ed25519.pub")  # Configura el modelo LLaMA de Ollama
+llm = ChatOllama(model_name="mistral:7b-instruct-v0.2-fp16", api_key=os.getenv("OLLAMA_API_KEY"))
 
 # Conversation memory configuration
 if 'buffer_memory' not in st.session_state:
