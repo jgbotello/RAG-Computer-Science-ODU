@@ -12,7 +12,7 @@ from pinecone import Pinecone, ServerlessSpec
 import os
 os.environ[
     "PINECONE_API_KEY"
-] = "9ca3ab29-e230-4616-94de-d542214a8ffd"
+] = st.secrets["PINECONE_API_KEY"]
 
 api_key = os.environ["PINECONE_API_KEY"]
 
